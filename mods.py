@@ -1,10 +1,4 @@
 import PySimpleGUI as sg
-from selenium import webdriver
-from webdriver_manager.microsoft import EdgeChromiumDriverManager
-from selenium.webdriver.edge.service import Service
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import Select
-from time import sleep
 from datetime import date
 
 
@@ -105,12 +99,7 @@ def janela_cadastro():
         [sg.T("Cadastrar", font="_ 18", justification="c", expand_x=True)],
         [sg.HorizontalSeparator()],
         [sg.T()],
-        [
-            sg.T("Indicador:", s=17, justification="r"),
-            sg.OptionMenu(default_value="WD CAMBIO", values=["WD CAMBIO", "ANGELA "], key="indicador"),
-            sg.T("Sexo:"),
-            sg.OptionMenu(default_value="Masc", values=["Masc", "Fem"], key="sexo"),
-        ],
+        [sg.T("Indicador:", s=17, justification="r"), sg.OptionMenu(default_value="WD CAMBIO", values=["WD CAMBIO", "ANGELA "], key="indicador"), sg.T("Sexo:"), sg.OptionMenu(default_value="Masc", values=["Masc", "Fem"], key="sexo")],
         [sg.Col(coluna1), sg.Col(coluna2)],
         [sg.T()],
         [

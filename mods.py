@@ -57,6 +57,8 @@ def janela_ferramentas():
         [sg.Col([[sg.T()]])],
         [sg.Col(coluna1), sg.Col(coluna2)],
         [sg.Col([[sg.T()]])],
+        [sg.T(), sg.Button('Acessar Mesa', button_color='grey', size=(35, 2))],
+        [sg.Col([[sg.T()]])],
         [sg.Col([[sg.T()]])],
         [
             sg.T("by: Leonardo Henke", s=52, justification="c", font="_ 8"),
@@ -218,5 +220,4 @@ def janela_consult_cadastro():
     ]
 
     return sg.Window("Ferramentas para Sistema Exchange", layout=layout, finalize=True)
-
 
